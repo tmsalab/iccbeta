@@ -1,0 +1,6 @@
+useDynLib(iccbeta)
+#import(RcppArmadillo)
+import(lme4)
+importFrom("Rcpp", evalCpp)
+exportPattern("^[[:alpha:]]+")
+

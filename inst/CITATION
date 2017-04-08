@@ -1,0 +1,12 @@
+citHeader("To cite package iccbeta in publications use:")
+
+citEntry(entry="Article",
+      title = "An expanded decision making procedure for examining cross-level interaction effects with multilevel modeling",
+         author = personList(as.person("Herman Aguinis"),
+         as.person("Steven Andrew Culpepper")),
+	 journal = "Organization Research Methods",
+         year = "in press",
+         url = "http://mypage.iu.edu/~haguinis/pubs.html",
+         pdf = "http://mypage.iu.edu/~haguinis/ORMinpress.pdf",
+         textVersion = "Agunis, H. & Culpepper, S. A. (in press). An expanded decision making procedure for examining cross-level interaction effects with multilevel modeling. Organizational Research Methods.")
+
