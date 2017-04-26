@@ -1,20 +1,20 @@
 Package: iccbeta
 Type: Package
-Title: Multilevel model intraclass correlation for slope heterogeneity
-Version: 1.0
-Date: 2014-11-21
-Authors@R: c(person("Steven Andrew", "Culpepper", role = c("aut", "cph","cre"), email =
-    "sculpepp@illinois.edu"),person("Herman", "Aguinis", role = c("aut", "cph"), email =
-    "haguinis@indiana.edu"))
-Maintainer: Steven Andrew Culpepper <sculpepp@illinois.edu>
-Description: A function and vignettes for computing an intraclass correlation described in Aguinis & Culpepper (in press). iccbeta quantifies the share of variance in a dependent variable that is attributed to group heterogeneity in slopes.
+Title: Multilevel Model Intraclass Correlation for Slope Heterogeneity
+Version: 1.0.1
+Date: 2017-04-25
+Authors@R: c(person("Steven Andrew", "Culpepper", role = c("aut", "cph","cre"),
+    email = "sculpepp@illinois.edu"),
+    person("Herman", "Aguinis", role = c("aut", "cph"), email =
+    "haguinis@gwu.edu"))
 License: GPL (>= 2)
+Description: A function and vignettes for computing an intraclass correlation
+    described in Aguinis & Culpepper (in press). iccbeta quantifies the share
+    of variance in a dependent variable that is attributed to group
+    heterogeneity in slopes.
 Imports: Rcpp (>= 0.11.1)
 LinkingTo: Rcpp (>= 0.11.1), RcppArmadillo
 Depends: R (>= 3.0.2), lme4
-Packaged: 2014-11-25 02:21:38 UTC; sculpepp
-Author: Steven Andrew Culpepper [aut, cph, cre],
-  Herman Aguinis [aut, cph]
-NeedsCompilation: yes
-Repository: CRAN
-Date/Publication: 2014-11-25 08:52:58
+URL: https://github.com/tmsalab/iccbeta
+BugReports: https://github.com/tmsalab/iccbeta/issues
+RoxygenNote: 6.0.1
