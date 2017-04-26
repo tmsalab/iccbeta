@@ -7,9 +7,9 @@
 \title{iccbeta: Multilevel Model Intraclass Correlation for Slope Heterogeneity}
 \description{
 A function and vignettes for computing an intraclass correlation
-described in Aguinis & Culpepper (in press). iccbeta quantifies the share
-of variance in a dependent variable that is attributed to group
-heterogeneity in slopes.
+described in Aguinis & Culpepper (2015) <doi:10.1177/1094428114563618>.
+This package quantifies the share of variance in a dependent variable that
+is attributed to group heterogeneity in slopes.
 }
 \examples{
 \dontrun{
@@ -60,7 +60,7 @@ sim.LRT <- LRTSim(X, Z, 0, diag(ncol(Z)))
 }
 }
 \references{
-Aguinis, H., & Culpepper, S.A. (in press).
+Aguinis, H., & Culpepper, S.A. (2015).
 An expanded decision making procedure for examining cross-level interaction
 effects with multilevel modeling. \emph{Organizational Research Methods}.
 Available at: \url{http://www.hermanaguinis.com/pubs.html}

@@ -5,8 +5,9 @@ citEntry(entry="Article",
          author = personList(as.person("Herman Aguinis"),
          as.person("Steven Andrew Culpepper")),
 	 journal = "Organization Research Methods",
-         year = "in press",
+         year = "2015",
          url = "http://www.hermanaguinis.com/pubs.html",
          pdf = "http://www.hermanaguinis.com/ORM2015.pdf",
-         textVersion = "Agunis, H. & Culpepper, S. A. (in press). An expanded decision making procedure for examining cross-level interaction effects with multilevel modeling. Organizational Research Methods.")
+         doi = "10.1177/1094428114563618",
+         textVersion = "Agunis, H. & Culpepper, S. A. (2015). An expanded decision making procedure for examining cross-level interaction effects with multilevel modeling. Organizational Research Methods.")
 

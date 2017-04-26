@@ -3,9 +3,23 @@
 * ubuntu 12.04 (on travis-ci), R 3.4.0
 * win-builder (devel and release)
 
+## Feedback
+
+The previously submitted version of this package had a CRAN maintainer request
+preprint information regarding Aguinis & Culpepper (in press). This has been 
+updated in the description and relevant documentation to point to the paper
+published in 2015 on the authors respective website. Furthermore, we have
+changed the sentence in the `DESCRIPTION` file from:
+
+> iccbeta quantifies the share ...
+
+To:
+
+> This package quantifies the share ...
+
 ## R CMD check results
 
-0 errors | 0 warnings | 0 note
+0 errors | 0 warnings | 1 note
 
 We have one note related to spelling:
 

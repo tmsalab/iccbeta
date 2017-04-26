@@ -3,7 +3,7 @@
 \docType{data}
 \name{simICCdata}
 \alias{simICCdata}
-\title{Simulated data example from Aguinis and Culpepper (in press).}
+\title{Simulated data example from Aguinis and Culpepper (2015).}
 \format{A data frame with 900 observations (i.e., 30 observations nested 
 within 30 groups) on the following 6 variables.
 \describe{
@@ -15,7 +15,7 @@ within 30 groups) on the following 6 variables.
     \item{\code{Y}}{A simulated outcome variable.}
 }}
 \source{
-Aguinis, H., & Culpepper, S.A. (in press). An expanded decision
+Aguinis, H., & Culpepper, S.A. (2015). An expanded decision
 making procedure for examining cross-level interaction effects with
 multilevel modeling. \emph{Organizational Research Methods}.
 Available at: \url{http://www.hermanaguinis.com/pubs.html}
@@ -24,13 +24,13 @@ Available at: \url{http://www.hermanaguinis.com/pubs.html}
 simICCdata
 }
 \description{
-A simulated data example from Aguinis and Culpepper (in press) to demonstrate
+A simulated data example from Aguinis and Culpepper (2015) to demonstrate
 the \code{\link{icc_beta}} function for computing the proportion of variance
 in the outcome variable that is attributed to heterogeneity in slopes due to
 higher-order processes/units.
 }
 \details{
-See Aguinis and Culpepper (in press) for the model used to simulate the dataset.
+See Aguinis and Culpepper (2015) for the model used to simulate the dataset.
 }
 \examples{
 \dontrun{

@@ -56,7 +56,7 @@ sim.LRT <- LRTSim(X, Z, 0, diag(ncol(Z)))
 }
 }
 \references{
-Aguinis, H., & Culpepper, S.A. (in press). An expanded decision
+Aguinis, H., & Culpepper, S.A. (2015). An expanded decision
 making procedure for examining cross-level interaction effects with
 multilevel modeling. \emph{Organizational Research Methods}.
 Available at: \url{http://hermanaguinis.com/pubs.html}

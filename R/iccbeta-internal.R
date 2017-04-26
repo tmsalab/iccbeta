@@ -4,7 +4,7 @@
 NULL
 
 #' @references
-#' Aguinis, H., & Culpepper, S.A. (in press).
+#' Aguinis, H., & Culpepper, S.A. (2015).
 #' An expanded decision making procedure for examining cross-level interaction
 #' effects with multilevel modeling. \emph{Organizational Research Methods}.
 #' Available at: \url{http://www.hermanaguinis.com/pubs.html}

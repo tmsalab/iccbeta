@@ -24,13 +24,13 @@ vy  The variance of the dependent variable.
 }
 \description{
 A function and vignettes for computing the intraclass correlation described
-in Aguinis & Culpepper (in press). iccbeta quantifies the share of variance
+in Aguinis & Culpepper (2015). iccbeta quantifies the share of variance
 in an outcome variable that is attributed to heterogeneity in slopes due to
 higher-order processes/units.
 }
 \examples{
 \dontrun{
-# Simulated Data Example from Aguinis & Culpepper (in press)
+# Simulated Data Example from Aguinis & Culpepper (2015)
 data(simICCdata)
 require(lme4)
     
@@ -81,7 +81,7 @@ sim.LRT <- LRTSim(X, Z, 0, diag(ncol(Z)))
 }  
 }
 \references{
-Aguinis, H., & Culpepper, S.A. (in press). An expanded decision making
+Aguinis, H., & Culpepper, S.A. (2015). An expanded decision making
 procedure for examining cross-level interaction effects with multilevel
 modeling. \emph{Organizational Research Methods}. Available at:
 \url{http://hermanaguinis.com/pubs.html}

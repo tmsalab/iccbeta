@@ -4,7 +4,7 @@
 //' relationships across higher-order processes/units.
 //' 
 //' A function and vignettes for computing the intraclass correlation described
-//' in Aguinis & Culpepper (in press). iccbeta quantifies the share of variance
+//' in Aguinis & Culpepper (2015). iccbeta quantifies the share of variance
 //' in an outcome variable that is attributed to heterogeneity in slopes due to
 //' higher-order processes/units. 
 //' @param X    The design \code{matrix} of fixed effects from a lmer model.
@@ -20,14 +20,14 @@
 //'          \code{\link[lme4]{VarCorr}}, \code{\link[RLRsim]{LRTSim}},
 //'          \code{\link{Hofmann}}, \code{\link{simICCdata}}
 //' @references 
-//' Aguinis, H., & Culpepper, S.A. (in press). An expanded decision making
+//' Aguinis, H., & Culpepper, S.A. (2015). An expanded decision making
 //' procedure for examining cross-level interaction effects with multilevel
 //' modeling. \emph{Organizational Research Methods}. Available at:
 //' \url{http://hermanaguinis.com/pubs.html}
 //' @export
 //' @examples
 //' \dontrun{
-//' # Simulated Data Example from Aguinis & Culpepper (in press)
+//' # Simulated Data Example from Aguinis & Culpepper (2015)
 //' data(simICCdata)
 //' require(lme4)
 //'     

@@ -13,7 +13,7 @@
 #' }
 #' @source 
 #' Hofmann, D.A., Griffin, M.A., & Gavin, M.B. (2000). The application of hierarchical linear modeling to management research. In K.J. Klein, & S.W.J. Kozlowski (Eds.), Multilevel theory, research, and methods in organizations: Foundations, extensions, and new directions (pp. 467-511).  Hoboken, NJ: Jossey-Bass.
-#' @references Aguinis, H., & Culpepper, S.A. (in press). An expanded decision
+#' @references Aguinis, H., & Culpepper, S.A. (2015). An expanded decision
 #' making procedure for examining cross-level interaction effects with
 #' multilevel modeling. \emph{Organizational Research Methods}.
 #' Available at: \url{http://hermanaguinis.com/pubs.html}
@@ -53,9 +53,9 @@
 #' }
 "Hofmann"
 
-#' Simulated data example from Aguinis and Culpepper (in press).
+#' Simulated data example from Aguinis and Culpepper (2015).
 #'
-#' A simulated data example from Aguinis and Culpepper (in press) to demonstrate
+#' A simulated data example from Aguinis and Culpepper (2015) to demonstrate
 #' the \code{\link{icc_beta}} function for computing the proportion of variance
 #' in the outcome variable that is attributed to heterogeneity in slopes due to
 #' higher-order processes/units. 
@@ -70,8 +70,8 @@
 #'     \item{\code{Y}}{A simulated outcome variable.}
 #' }
 #' @details
-#' See Aguinis and Culpepper (in press) for the model used to simulate the dataset. 
-#' @source Aguinis, H., & Culpepper, S.A. (in press). An expanded decision
+#' See Aguinis and Culpepper (2015) for the model used to simulate the dataset. 
+#' @source Aguinis, H., & Culpepper, S.A. (2015). An expanded decision
 #' making procedure for examining cross-level interaction effects with
 #' multilevel modeling. \emph{Organizational Research Methods}.
 #' Available at: \url{http://www.hermanaguinis.com/pubs.html}
