@@ -6,7 +6,7 @@ citEntry(entry="Article",
          as.person("Steven Andrew Culpepper")),
 	 journal = "Organization Research Methods",
          year = "in press",
-         url = "http://mypage.iu.edu/~haguinis/pubs.html",
-         pdf = "http://mypage.iu.edu/~haguinis/ORMinpress.pdf",
+         url = "http://www.hermanaguinis.com/pubs.html",
+         pdf = "http://www.hermanaguinis.com/ORM2015.pdf",
          textVersion = "Agunis, H. & Culpepper, S. A. (in press). An expanded decision making procedure for examining cross-level interaction effects with multilevel modeling. Organizational Research Methods.")
 
