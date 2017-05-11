@@ -42,6 +42,11 @@ vy <- var(simICCdata$Y)
 lmm0 <- lmer(Y ~ (1|l2id),data=simICCdata,REML=F)
 VarCorr(lmm0)$l2id[1,1]/vy
 
+# Create simICCdata2
+grp_means = aggregate(simICCdata[c('X1','X2')], simICCdata['l2id'],mean)
+colnames(grp_means)[2:3] = c('m_X1','m_X2')
+simICCdata2 = merge(simICCdata,grp_means,by='l2id')
+
 # Estimating random slopes model
 lmm1  <- lmer(Y~I(X1-m_X1)+I(X2-m_X2) +(I(X1-m_X1)+I(X2-m_X2)|l2id),data=simICCdata2,REML=F)
 X <- model.matrix(lmm1)
