@@ -83,6 +83,6 @@
 #' (pval <- mean(sim.LRT > obs.LRT))
 #' }  
 icc_beta <- function(X, l2id, T, vy) {
-    .Call('iccbeta_icc_beta', PACKAGE = 'iccbeta', X, l2id, T, vy)
+    .Call(`_iccbeta_icc_beta`, X, l2id, T, vy)
 }
 
