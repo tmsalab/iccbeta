@@ -18,7 +18,7 @@ r:
 # Use https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test
 addons:
   apt:
-    source:
+    sources:
       - ubuntu-toolchain-r-test
     packages:
       - g++-5
@@ -36,5 +36,3 @@ before_install:
 
 env:
   - COMPILER=g++-5
-  - CC=gcc-5
-  - CXX=g++-5
