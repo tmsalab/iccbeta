@@ -4,8 +4,9 @@
 language: r
 cache: packages
 sudo: false
-dist: trusty
+
 # Trusty is later than Precise
+dist: trusty
 
 # Testing matrix of different R versions
 r:
@@ -15,7 +16,8 @@ r:
   - devel
 
 # Install new packages via ubuntu's apt-get manager
-# Use https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test
+# View available compilers in the ubuntu-toolchain-r ppa at:
+# https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test
 addons:
   apt:
     sources:

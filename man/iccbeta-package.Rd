@@ -17,7 +17,7 @@ is attributed to group heterogeneity in slopes.
 if(requireNamespace("lme4") && requireNamespace("RLRsim")){ 
 # Simulated Data Example
 data(simICCdata)
-require(lme4)
+library('lme4')
 
 # computing icca
 vy <- var(simICCdata$Y)
@@ -38,20 +38,21 @@ T1 <- VarCorr(lmm1)$l2id[1:p, 1:p]
 
 # computing iccb
 # Notice '+1' because icc_beta assumes l2ids are from 1 to 30.
-icc_beta(X,simICCdata2$l2id+1,T1,vy)$rho_beta
+icc_beta(X, simICCdata2$l2id + 1, T1, vy)$rho_beta
 
 # Hofmann 2000 Example
 data(Hofmann)
-require(lme4)
+library('lme4')
 
 # Random-Intercepts Model
-lmmHofmann0 <- lmer(helping ~ (1|id),data=Hofmann)
+lmmHofmann0 <- lmer(helping ~ (1|id), data = Hofmann)
 vy_Hofmann <- var(Hofmann[,'helping'])
 # computing icca
 VarCorr(lmmHofmann0)$id[1,1]/vy_Hofmann
 
 # Estimating Group-Mean Centered Random Slopes Model, no level 2 variables
-lmmHofmann1  <- lmer(helping ~ mood_grp_cent + (mood_grp_cent |id),data=Hofmann,REML=F)
+lmmHofmann1  <- lmer(helping ~ mood_grp_cent + (mood_grp_cent | id),
+                     data = Hofmann, REML = FALSE)
 X_Hofmann <- model.matrix(lmmHofmann1)
 P <- ncol(X_Hofmann)
 T1_Hofmann <- VarCorr(lmmHofmann1)$id[1:P, 1:P]
