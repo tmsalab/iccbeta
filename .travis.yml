@@ -3,7 +3,7 @@
 # Standard devtools wrapper travis declaration
 language: r
 cache: packages
-sudo: false
+sudo: required
 
 # Trusty is later than Precise
 dist: trusty
