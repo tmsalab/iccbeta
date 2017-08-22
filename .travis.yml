@@ -4,6 +4,8 @@
 language: r
 cache: packages
 sudo: false
+dist: trusty
+# Trusty is later than Precise
 
 # Testing matrix of different R versions
 r:
@@ -13,21 +15,26 @@ r:
   - devel
 
 # Install new packages via ubuntu's apt-get manager
-# Search for packages you need here:
-# https://packages.ubuntu.com/search?keywords=gcc&searchon=names&suite=zesty&section=all
-# https://packages.ubuntu.com/search?keywords=g%2B%2B&searchon=names&suite=zesty&section=all
+# Use https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test
 addons:
   apt:
+    source:
+      - ubuntu-toolchain-r-test
     packages:
-      - gcc-5
       - g++-5
 
 # Specify local Makevars configuration
 before_install:
   - mkdir -p ~/.R
-  - echo "CC=gcc-5"    >> ~/.R/Makevars
-  - echo "CXX=g++-5"   >> ~/.R/Makevars
-  - echo "CXX1X=g++-5" >> ~/.R/Makevars
-  - echo "CXX11=g++-5" >> ~/.R/Makevars
-  - echo "CXX14=g++-5" >> ~/.R/Makevars
-  - echo "CXX14=g++-5" >> ~/.R/Makevars
+  - VER=-5
+  - echo "CC=gcc$(VER)" >> ~/.R/Makevars
+  - echo "CXX=g++$(VER)">> ~/.R/Makevars
+  - echo 'CXX1X=$(CXX)' >> ~/.R/Makevars
+  - echo 'CXX11=$(CXX)' >> ~/.R/Makevars
+  - echo 'CXX14=$(CXX)' >> ~/.R/Makevars
+  - echo 'CXX14=$(CXX)' >> ~/.R/Makevars
+
+env:
+  - COMPILER=g++-5
+  - CC=gcc-5
+  - CXX=g++-5
