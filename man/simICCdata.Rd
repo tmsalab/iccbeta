@@ -35,26 +35,31 @@ See Aguinis and Culpepper (2015) for the model used to simulate the dataset.
 \examples{
 \dontrun{
 data(simICCdata)
-require(lme4)
+if(requireNamespace("lme4")){ 
+library("lme4")
 
 # computing icca
 vy <- var(simICCdata$Y)
-lmm0 <- lmer(Y ~ (1|l2id),data=simICCdata,REML=F)
+lmm0 <- lmer(Y ~ (1|l2id), data = simICCdata, REML = FALSE)
 VarCorr(lmm0)$l2id[1,1]/vy
 
 # Create simICCdata2
 grp_means = aggregate(simICCdata[c('X1','X2')], simICCdata['l2id'],mean)
 colnames(grp_means)[2:3] = c('m_X1','m_X2')
-simICCdata2 = merge(simICCdata,grp_means,by='l2id')
+simICCdata2 = merge(simICCdata, grp_means, by='l2id')
 
 # Estimating random slopes model
-lmm1  <- lmer(Y~I(X1-m_X1)+I(X2-m_X2) +(I(X1-m_X1)+I(X2-m_X2)|l2id),data=simICCdata2,REML=F)
+lmm1  <- lmer(Y ~ I(X1-m_X1) + I(X2-m_X2) + (I(X1-m_X1) + I(X2-m_X2) | l2id),
+              data = simICCdata2, REML = FALSE)
 X <- model.matrix(lmm1)
 p <- ncol(X)
 T1 <- VarCorr(lmm1) $l2id[1:p,1:p]
 # computing iccb
 # Notice '+1' because icc_beta assumes l2ids are from 1 to 30.
-icc_beta(X,simICCdata2$l2id+1,T1,vy)$rho_beta
+icc_beta(X, simICCdata2$l2id+1, T1, vy)$rho_beta
+} else {
+ stop("Please install `lme4` to run the above example.")
+}
 }
 }
 \seealso{

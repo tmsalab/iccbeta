@@ -25,34 +25,41 @@ A multilevel dataset from Hofmann, Griffin, and Gavin (2000).
 }
 \examples{
 \dontrun{
+
+if(requireNamespace("lme4") && requireNamespace("RLRsim")){ 
 data(Hofmann)
-require(lme4)
+library("lme4")
 
 # Random-Intercepts Model
-lmmHofmann0 = lmer(helping ~ (1|id),data=Hofmann)
+lmmHofmann0 = lmer(helping ~ (1|id), data = Hofmann)
 vy_Hofmann = var(Hofmann[,'helping'])
 
 # Computing icca
 VarCorr(lmmHofmann0)$id[1,1]/vy_Hofmann
 
 # Estimating Group-Mean Centered Random Slopes Model, no level 2 variables
-lmmHofmann1  <- lmer(helping ~ mood_grp_cent + (mood_grp_cent |id),data=Hofmann,REML=F)
+lmmHofmann1  <- lmer(helping ~ mood_grp_cent + (mood_grp_cent |id),
+                     data = Hofmann, REML = FALSE)
 X_Hofmann = model.matrix(lmmHofmann1)
 P = ncol(X_Hofmann)
 T1_Hofmann  = VarCorr(lmmHofmann1)$id[1:P,1:P]
 
 # Computing iccb
-icc_beta(X_Hofmann,Hofmann[,'id'],T1_Hofmann,vy_Hofmann)$rho_beta
+icc_beta(X_Hofmann, Hofmann[,'id'], T1_Hofmann, vy_Hofmann)$rho_beta
 
 # Performing LR test
 # Need to install 'RLRsim' package
-library('RLRsim')
-lmmHofmann1a  <- lmer(helping ~ mood_grp_cent + (1 |id),data=Hofmann,REML=F)
-obs.LRT <- 2*(logLik(lmmHofmann1)-logLik(lmmHofmann1a))[1]
+library("RLRsim")
+lmmHofmann1a  <- lmer(helping ~ mood_grp_cent + (1 | id),
+                      data = Hofmann, REML = FALSE)
+obs.LRT <- 2*(logLik(lmmHofmann1) - logLik(lmmHofmann1a))[1]
 X <- getME(lmmHofmann1,"X")
 Z <- t(as.matrix(getME(lmmHofmann1,"Zt")))
 sim.LRT <- LRTSim(X, Z, 0, diag(ncol(Z)))
 (pval <- mean(sim.LRT > obs.LRT))
+} else {
+ stop("Please install packages `RLRsim` and `lme4` to run the above example.")
+}
 }
 }
 \references{
