@@ -1,5 +1,33 @@
 # R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
 
-language: R
-sudo: false
+# Standard devtools wrapper travis declaration
+language: r
 cache: packages
+sudo: false
+
+# Testing matrix of different R versions
+r:
+  - 3.2
+  - oldrel
+  - release
+  - devel
+
+# Install new packages via ubuntu's apt-get manager
+# Search for packages you need here:
+# https://packages.ubuntu.com/search?keywords=gcc&searchon=names&suite=zesty&section=all
+# https://packages.ubuntu.com/search?keywords=g%2B%2B&searchon=names&suite=zesty&section=all
+addons:
+  apt:
+    packages:
+      - gcc-5
+      - g++-5
+
+# Specify local Makevars configuration
+before_install:
+  - mkdir -p ~/.R
+  - echo "CC=gcc-5"    >> ~/.R/Makevars
+  - echo "CXX=g++-5"   >> ~/.R/Makevars
+  - echo "CXX1X=g++-5" >> ~/.R/Makevars
+  - echo "CXX11=g++-5" >> ~/.R/Makevars
+  - echo "CXX14=g++-5" >> ~/.R/Makevars
+  - echo "CXX14=g++-5" >> ~/.R/Makevars
