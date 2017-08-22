@@ -25,6 +25,7 @@ addons:
     packages:
       - gcc-5
       - g++-5
+      - gfortran-5
 
 # Specify local Makevars configuration
 before_install:
