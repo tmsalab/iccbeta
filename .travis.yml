@@ -5,32 +5,9 @@ language: r
 cache: packages
 sudo: required
 
-# Trusty is later than Precise
-dist: trusty
-
 # Testing matrix of different R versions
 r:
   - 3.2
   - oldrel
   - release
   - devel
-
-# Install new packages via ubuntu's apt-get manager
-# View available compilers in the ubuntu-toolchain-r ppa at:
-# https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - gcc-5
-      - g++-5
-      - gfortran-5
-
-# Specify local Makevars configuration
-before_install:
-  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
-  - sudo update-alternatives --install /usr/bin/gfortran gfortran /usr/bin/gfortran-5 50
-
-env:
-  - COMPILER=g++-5
