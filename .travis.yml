@@ -6,8 +6,8 @@ cache: packages
 sudo: required
 
 # Testing matrix of different R versions
-r:
-  - 3.2
-  - oldrel
-  - release
-  - devel
+# r:
+#   - 3.2
+#   - oldrel
+#   - release
+#   - devel
