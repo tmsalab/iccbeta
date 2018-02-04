@@ -12,7 +12,9 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Travis-CI Build Status](https://travis-ci.org/tmsalab/iccbeta.svg?branch=master)](https://travis-ci.org/tmsalab/iccbeta)[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/iccbeta)](http://www.r-pkg.org/pkg/iccbeta)[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/iccbeta)](https://cran.r-project.org/package=iccbeta)
+[![Travis-CI Build Status](https://travis-ci.org/tmsalab/iccbeta.svg?branch=master)](https://travis-ci.org/tmsalab/iccbeta)
+[![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/iccbeta)](http://www.r-pkg.org/pkg/iccbeta)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/iccbeta)](https://cran.r-project.org/package=iccbeta)
 
 # `iccbeta` R Package
 
