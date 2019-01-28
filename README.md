@@ -45,11 +45,16 @@ To use the `iccbeta` package, load it into *R* using:
 library("iccbeta")
 ```
 
-From there, the `icc_beta()` function can be called to compute the
-intraclass correlation:
+From there, the `icc_beta()` function can be called using either
+`lmer()` model object or individual components to compute the intraclass
+correlation:
 
 ``` r
-results = icc_beta(X, l2id, T, vy)
+# Automatically calculate icc from model
+results_model = icc_beta(<lmer-model>)
+
+# Calculate icc from individual terms.
+results_manual = icc_beta(X, l2id, T, vy)
 ```
 
 ## Authors
