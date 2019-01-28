@@ -6,9 +6,9 @@
 
 using namespace Rcpp;
 
-// icc_beta
-Rcpp::List icc_beta(const arma::mat& X, const arma::vec& l2id, const arma::mat& T, double vy);
-RcppExport SEXP _iccbeta_icc_beta(SEXP XSEXP, SEXP l2idSEXP, SEXP TSEXP, SEXP vySEXP) {
+// icc_beta_cpp
+Rcpp::List icc_beta_cpp(const arma::mat& X, const arma::vec& l2id, const arma::mat& T, double vy);
+RcppExport SEXP _iccbeta_icc_beta_cpp(SEXP XSEXP, SEXP l2idSEXP, SEXP TSEXP, SEXP vySEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -16,13 +16,13 @@ BEGIN_RCPP
     Rcpp::traits::input_parameter< const arma::vec& >::type l2id(l2idSEXP);
     Rcpp::traits::input_parameter< const arma::mat& >::type T(TSEXP);
     Rcpp::traits::input_parameter< double >::type vy(vySEXP);
-    rcpp_result_gen = Rcpp::wrap(icc_beta(X, l2id, T, vy));
+    rcpp_result_gen = Rcpp::wrap(icc_beta_cpp(X, l2id, T, vy));
     return rcpp_result_gen;
 END_RCPP
 }
 
 static const R_CallMethodDef CallEntries[] = {
-    {"_iccbeta_icc_beta", (DL_FUNC) &_iccbeta_icc_beta, 4},
+    {"_iccbeta_icc_beta_cpp", (DL_FUNC) &_iccbeta_icc_beta_cpp, 4},
     {NULL, NULL, 0}
 };
 

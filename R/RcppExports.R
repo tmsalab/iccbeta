@@ -41,73 +41,8 @@
 #' modeling. _Organizational Research Methods_. Available at:
 #' <http://hermanaguinis.com/pubs.html>
 #' 
-#' @export
-#' @examples
-#' \dontrun{
-#'
-#' if(requireNamespace("lme4") && requireNamespace("RLRsim")){
-#' # Simulated Data Example from Aguinis & Culpepper (2015)
-#' data(simICCdata)
-#' library("lme4")
-#'
-#' # Computing icca
-#' vy <- var(simICCdata$Y)
-#' lmm0 <- lmer(Y ~ (1 | l2id), data = simICCdata, REML = FALSE)
-#' VarCorr(lmm0)$l2id[1, 1]/vy
-#'
-#' # Create simICCdata2
-#' grp_means = aggregate(simICCdata[c('X1', 'X2')], simICCdata['l2id'], mean)
-#' colnames(grp_means)[2:3] = c('m_X1', 'm_X2')
-#' simICCdata2 = merge(simICCdata, grp_means, by='l2id')
-#'
-#' # Estimating random slopes model
-#' lmm1  <- lmer(Y ~ I(X1 - m_X1) + I(X2 - m_X2) + 
-#'                  (I(X1 - m_X1) + I(X2 - m_X2) | l2id),
-#'               data = simICCdata2, REML = FALSE)
-#'                   
-#' X <- model.matrix(lmm1)
-#' p <- ncol(X)
-#' T1  <- VarCorr(lmm1)$l2id[1:p,1:p]
-#'
-#' # Computing iccb
-#' # Notice '+1' because icc_beta assumes l2ids are from 1 to 30.
-#' icc_beta(X, simICCdata2$l2id+1, T1, vy)$rho_beta
-#'
-#' # Hofmann et al. (2000) Example
-#' data(Hofmann)
-#' library("lme4")
-#'
-#' # Random-Intercepts Model
-#' lmmHofmann0 = lmer(helping ~ (1|id), data = Hofmann)
-#' vy_Hofmann = var(Hofmann[,'helping'])
-#'
-#' # Computing icca
-#' VarCorr(lmmHofmann0)$id[1,1]/vy_Hofmann
-#'
-#' # Estimating Group-Mean Centered Random Slopes Model, no level 2 variables
-#' lmmHofmann1 <- lmer(helping ~ mood_grp_cent + (mood_grp_cent |id),
-#'                     data = Hofmann, REML = FALSE)
-#' X_Hofmann <- model.matrix(lmmHofmann1)
-#' P <- ncol(X_Hofmann)
-#' T1_Hofmann <- VarCorr(lmmHofmann1)$id[1:P,1:P]
-#'
-#' # Computing iccb
-#' icc_beta(X_Hofmann, Hofmann[,'id'], T1_Hofmann, vy_Hofmann)$rho_beta
-#'
-#' # Performing LR test
-#' library("RLRsim")
-#' lmmHofmann1a <- lmer(helping ~ mood_grp_cent + (1 |id),
-#'                      data = Hofmann, REML = FALSE)
-#' obs.LRT <- 2*(logLik(lmmHofmann1) - logLik(lmmHofmann1a))[1]
-#' X <- getME(lmmHofmann1,"X")
-#' Z <- t(as.matrix(getME(lmmHofmann1,"Zt")))
-#' sim.LRT <- LRTSim(X, Z, 0, diag(ncol(Z)))
-#' (pval <- mean(sim.LRT > obs.LRT))
-#' } else {
-#'  stop("Please install packages `RLRsim` and `lme4` to run the above example.") 
-#' } 
-#' }
-icc_beta <- function(X, l2id, T, vy) {
-    .Call(`_iccbeta_icc_beta`, X, l2id, T, vy)
+#' @noRd
+icc_beta_cpp <- function(X, l2id, T, vy) {
+    .Call(`_iccbeta_icc_beta_cpp`, X, l2id, T, vy)
 }
 
