@@ -1,6 +1,6 @@
 # Package documentation
 
-#' @useDynLib "iccbeta", .registration=TRUE
+#' @useDynLib iccbeta, .registration=TRUE
 #' @importFrom Rcpp evalCpp
 #' @references
 #' Aguinis, H., & Culpepper, S.A. (2015).

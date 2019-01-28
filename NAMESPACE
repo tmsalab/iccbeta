@@ -2,4 +2,4 @@
 
 export(icc_beta)
 importFrom(Rcpp,evalCpp)
-useDynLib("iccbeta", .registration=TRUE)
+useDynLib(iccbeta, .registration=TRUE)
