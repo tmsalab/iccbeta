@@ -122,6 +122,8 @@ icc_beta = function(x, ...) {
 
 #' @importFrom lme4 VarCorr
 #' @importClassesFrom lme4 lmerMod
+#' @importFrom stats model.frame model.matrix model.response var
+#' @importFrom methods slot
 #' @rdname icc_beta
 #' @export
 icc_beta.lmerMod = function(x, ...) {
