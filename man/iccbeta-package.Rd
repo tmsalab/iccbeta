@@ -7,9 +7,9 @@
 \title{iccbeta: Multilevel Model Intraclass Correlation for Slope Heterogeneity}
 \description{
 A function and vignettes for computing an intraclass correlation
-described in Aguinis & Culpepper (2015) <doi:10.1177/1094428114563618>.
-This package quantifies the share of variance in a dependent variable that
-is attributed to group heterogeneity in slopes.
+    described in Aguinis & Culpepper (2015) <doi:10.1177/1094428114563618>.
+    This package quantifies the share of variance in a dependent variable that
+    is attributed to group heterogeneity in slopes.
 }
 \examples{
 \dontrun{
@@ -88,11 +88,11 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: Steven Andrew Culpepper \email{sculpepp@illinois.edu} [copyright holder]
+\strong{Maintainer}: Steven Andrew Culpepper \email{sculpepp@illinois.edu} (0000-0003-4226-6176) [copyright holder]
 
 Authors:
 \itemize{
-  \item Herman Aguinis \email{haguinis@gwu.edu} [copyright holder]
+  \item Herman Aguinis \email{haguinis@gwu.edu} (0000-0002-3485-9484) [copyright holder]
 }
 
 }
