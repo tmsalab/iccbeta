@@ -4,15 +4,15 @@
 \name{simICCdata}
 \alias{simICCdata}
 \title{Simulated data example from Aguinis and Culpepper (2015).}
-\format{A data frame with 900 observations (i.e., 30 observations nested 
+\format{A data frame with 900 observations (i.e., 30 observations nested
 within 30 groups) on the following 6 variables.
 \describe{
-    \item{\code{l1id}}{A within group ID variable.}
-    \item{\code{l2id}}{A group ID variable.}
-    \item{\code{one}}{A column of 1's for the intercept.}
-    \item{\code{X1}}{A simulated level 1 predictor.}
-    \item{\code{X2}}{A simulated level 1 predictor.}
-    \item{\code{Y}}{A simulated outcome variable.}
+\item{\code{l1id}}{A within group ID variable.}
+\item{\code{l2id}}{A group ID variable.}
+\item{\code{one}}{A column of 1's for the intercept.}
+\item{\code{X1}}{A simulated level 1 predictor.}
+\item{\code{X2}}{A simulated level 1 predictor.}
+\item{\code{Y}}{A simulated outcome variable.}
 }}
 \source{
 Aguinis, H., & Culpepper, S.A. (2015). An expanded decision
@@ -64,7 +64,7 @@ icc_beta(X, simICCdata2$l2id+1, T1, vy)$rho_beta
 }
 \seealso{
 \code{\link[lme4]{lmer}}, \code{\link{model.matrix}},
-         \code{\link[lme4]{VarCorr}}, \code{\link[RLRsim]{LRTSim}},
-         \code{\link{Hofmann}}
+\code{\link[lme4]{VarCorr}}, \code{\link[RLRsim]{LRTSim}},
+\code{\link{Hofmann}}
 }
 \keyword{datasets}
