@@ -4,8 +4,18 @@ Title: Multilevel Model Intraclass Correlation for Slope Heterogeneity
 Version: 1.1.0.1000
 Authors@R: c(person("Steven Andrew", "Culpepper", role = c("aut", "cph","cre"),
     email = "sculpepp@illinois.edu"),
-    person("Herman", "Aguinis", role = c("aut", "cph"), email =
-    "haguinis@gwu.edu"))
+    person(, role = c("aut", "cph"), email =
+    ""))
+Authors@R: c(person("Steven Andrew", "Culpepper", 
+                    email = "sculpepp@illinois.edu",
+                    role = c("aut", "cph", "cre"),
+                    comment = c(ORCID = "0000-0003-4226-6176")
+                    ),
+             person("Herman", "Aguinis"
+                    email = "haguinis@gwu.edu",
+                    role = c("aut", "cph"),
+                    comment = c(ORCID = "0000-0002-3485-9484"))
+            )
 License: GPL (>= 2)
 Description: A function and vignettes for computing an intraclass correlation
     described in Aguinis & Culpepper (2015) <doi:10.1177/1094428114563618>.
