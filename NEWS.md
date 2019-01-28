@@ -1,3 +1,23 @@
+# iccbeta 1.2.0
+
+## Changes
+
+- Added improved error messaging related to presence of missing values and
+  dimension mis-match.
+- Added ORCiDs to `DESCRIPTION`
+- Increased version dependencies.
+- Enabled use of OpenMP and C++11.
+- Added `CITATION` information for the _R_ package.
+
+## Documentation
+
+- Switched documentation to use Markdown.
+- Improved contents of documentation.
+
+## Deployment
+
+- Enable the default TMSALab Travis-CI configuration.
+
 # iccbeta 1.1.0
 
 - Adds instructions on how to create `simICCdata2` to relevant helpdocs
