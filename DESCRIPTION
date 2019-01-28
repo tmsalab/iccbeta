@@ -21,9 +21,9 @@ Description: A function and vignettes for computing an intraclass correlation
     described in Aguinis & Culpepper (2015) <doi:10.1177/1094428114563618>.
     This package quantifies the share of variance in a dependent variable that
     is attributed to group heterogeneity in slopes.
-Imports: Rcpp (>= 0.12.12)
-LinkingTo: Rcpp (>= 0.12.12), RcppArmadillo (>= 0.7.800)
-Depends: R (>= 3.2.0)
+Imports: Rcpp 
+LinkingTo: Rcpp (>= 1.0.0), RcppArmadillo (>= 0.9.200)
+Depends: R (>= 3.4.0)
 Suggests: lme4, RLRsim
 URL: https://github.com/tmsalab/iccbeta
 BugReports: https://github.com/tmsalab/iccbeta/issues
