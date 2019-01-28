@@ -2,10 +2,6 @@ Package: iccbeta
 Type: Package
 Title: Multilevel Model Intraclass Correlation for Slope Heterogeneity
 Version: 1.1.0.1000
-Authors@R: c(person("Steven Andrew", "Culpepper", role = c("aut", "cph","cre"),
-    email = "sculpepp@illinois.edu"),
-    person(, role = c("aut", "cph"), email =
-    ""))
 Authors@R: c(person("Steven Andrew", "Culpepper", 
                     email = "sculpepp@illinois.edu",
                     role = c("aut", "cph", "cre"),
