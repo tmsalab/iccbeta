@@ -10,8 +10,8 @@ icc_beta(X, l2id, T, vy)
 \arguments{
 \item{X}{The design \code{matrix} of fixed effects from a lmer model.}
 
-\item{l2id}{A \code{vector} that identifies group membership. The vector 
-must be coded as a sequence of integers from 1 to J, 
+\item{l2id}{A \code{vector} that identifies group membership. The vector
+must be coded as a sequence of integers from 1 to J,
 the number of groups.}
 
 \item{T}{A \code{matrix} of the estimated variance-covariance matrix of
@@ -20,7 +20,14 @@ a lmer model fit.}
 \item{vy}{The variance of the outcome variable.}
 }
 \value{
-vy  The variance of the dependent variable.
+A \code{list} with:
+\itemize{
+\item \code{J}
+\item \code{means}
+\item \code{XcpXc}
+\item \code{Nj}
+\item \code{rho_beta}
+}
 }
 \description{
 A function and vignettes for computing the intraclass correlation described
@@ -31,11 +38,11 @@ higher-order processes/units.
 \examples{
 \dontrun{
 
-if(requireNamespace("lme4") && requireNamespace("RLRsim")){ 
+if(requireNamespace("lme4") && requireNamespace("RLRsim")){
 # Simulated Data Example from Aguinis & Culpepper (2015)
 data(simICCdata)
 library("lme4")
-    
+
 # Computing icca
 vy <- var(simICCdata$Y)
 lmm0 <- lmer(Y ~ (1 | l2id), data = simICCdata, REML = FALSE)
@@ -45,10 +52,12 @@ VarCorr(lmm0)$l2id[1, 1]/vy
 grp_means = aggregate(simICCdata[c('X1', 'X2')], simICCdata['l2id'], mean)
 colnames(grp_means)[2:3] = c('m_X1', 'm_X2')
 simICCdata2 = merge(simICCdata, grp_means, by='l2id')
-        
+
 # Estimating random slopes model
-lmm1  <- lmer(Y ~ I(X1-m_X1) + I(X2-m_X2) + (I(X1-m_X1) + I(X2-m_X2) | l2id),
-                      data = simICCdata2, REML = FALSE)
+lmm1  <- lmer(Y ~ I(X1 - m_X1) + I(X2 - m_X2) + 
+                 (I(X1 - m_X1) + I(X2 - m_X2) | l2id),
+              data = simICCdata2, REML = FALSE)
+                  
 X <- model.matrix(lmm1)
 p <- ncol(X)
 T1  <- VarCorr(lmm1)$l2id[1:p,1:p]
@@ -56,18 +65,18 @@ T1  <- VarCorr(lmm1)$l2id[1:p,1:p]
 # Computing iccb
 # Notice '+1' because icc_beta assumes l2ids are from 1 to 30.
 icc_beta(X, simICCdata2$l2id+1, T1, vy)$rho_beta
-            
+
 # Hofmann et al. (2000) Example
 data(Hofmann)
 library("lme4")
-                
+
 # Random-Intercepts Model
 lmmHofmann0 = lmer(helping ~ (1|id), data = Hofmann)
 vy_Hofmann = var(Hofmann[,'helping'])
 
 # Computing icca
 VarCorr(lmmHofmann0)$id[1,1]/vy_Hofmann
-                    
+
 # Estimating Group-Mean Centered Random Slopes Model, no level 2 variables
 lmmHofmann1 <- lmer(helping ~ mood_grp_cent + (mood_grp_cent |id),
                     data = Hofmann, REML = FALSE)
@@ -77,10 +86,10 @@ T1_Hofmann <- VarCorr(lmmHofmann1)$id[1:P,1:P]
 
 # Computing iccb
 icc_beta(X_Hofmann, Hofmann[,'id'], T1_Hofmann, vy_Hofmann)$rho_beta
-                        
+
 # Performing LR test
 library("RLRsim")
-lmmHofmann1a <- lmer(helping ~ mood_grp_cent + (1 |id), 
+lmmHofmann1a <- lmer(helping ~ mood_grp_cent + (1 |id),
                      data = Hofmann, REML = FALSE)
 obs.LRT <- 2*(logLik(lmmHofmann1) - logLik(lmmHofmann1a))[1]
 X <- getME(lmmHofmann1,"X")
@@ -88,9 +97,9 @@ Z <- t(as.matrix(getME(lmmHofmann1,"Zt")))
 sim.LRT <- LRTSim(X, Z, 0, diag(ncol(Z)))
 (pval <- mean(sim.LRT > obs.LRT))
 } else {
- stop("Please install packages `RLRsim` and `lme4` to run the above example.")
+ stop("Please install packages `RLRsim` and `lme4` to run the above example.") 
+} 
 }
-}  
 }
 \references{
 Aguinis, H., & Culpepper, S.A. (2015). An expanded decision making
@@ -99,10 +108,10 @@ modeling. \emph{Organizational Research Methods}. Available at:
 \url{http://hermanaguinis.com/pubs.html}
 }
 \seealso{
-\code{\link[lme4]{lmer}}, \code{\link{model.matrix}},
-         \code{\link[lme4]{VarCorr}}, \code{\link[RLRsim]{LRTSim}},
-         \code{\link{Hofmann}}, \code{\link{simICCdata}}
+\code{\link[lme4:lmer]{lme4::lmer()}}, \code{\link[=model.matrix]{model.matrix()}},
+\code{\link[lme4:VarCorr]{lme4::VarCorr()}}, \code{\link[RLRsim:LRTSim]{RLRsim::LRTSim()}},
+\link[iccbeta:Hofmann]{iccbeta::Hofmann}, and \link[iccbeta:simICCdata]{iccbeta::simICCdata}
 }
 \author{
-Steven A Culpepper
+Steven Andrew Culpepper
 }
