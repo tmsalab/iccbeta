@@ -6,7 +6,7 @@
 #' in an outcome variable that is attributed to heterogeneity in slopes due to
 #' higher-order processes/units.
 #' 
-#' @param X    A `lmer` model object or a design matrix with no missing values.
+#' @param x    A `lmer` model object or a design matrix with no missing values.
 #' @param ...  Additional parameters...
 #' 
 #' @return 

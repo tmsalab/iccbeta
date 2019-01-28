@@ -14,6 +14,8 @@ icc_beta(x, ...)
 \method{icc_beta}{default}(x, l2id, T, vy, ...)
 }
 \arguments{
+\item{x}{A \code{lmer} model object or a design matrix with no missing values.}
+
 \item{...}{Additional parameters...}
 
 \item{l2id}{A \code{vector} that identifies group membership. The vector
@@ -24,8 +26,6 @@ the number of groups.}
 a lmer model fit.}
 
 \item{vy}{The variance of the outcome variable.}
-
-\item{X}{A \code{lmer} model object or a design matrix with no missing values.}
 }
 \value{
 A \code{list} with:
