@@ -12,7 +12,8 @@ Status](https://cranchecks.info/badges/worst/iccbeta)](https://cran.r-project.or
 Downloads](http://cranlogs.r-pkg.org/badges/iccbeta?color=brightgreen)](http://www.r-pkg.org/pkg/iccbeta)
 [![RStudio CRAN Mirror’s Total
 Downloads](http://cranlogs.r-pkg.org/badges/grand-total/iccbeta?color=brightgreen)](http://www.r-pkg.org/pkg/iccbeta)
-<!--[![Coverage status](https://codecov.io/gh/tmsalab/iccbeta/branch/master/graph/badge.svg)](https://codecov.io/github/tmsalab/iccbeta?branch=master)-->
+[![Coverage
+status](https://codecov.io/gh/tmsalab/iccbeta/branch/master/graph/badge.svg)](https://codecov.io/github/tmsalab/iccbeta?branch=master)
 
 # `iccbeta` R package
 
