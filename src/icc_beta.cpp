@@ -110,6 +110,10 @@
 Rcpp::List icc_beta(const arma::mat &X, const arma::vec &l2id,
                     const arma::mat &T, double vy)
 {
+  
+    if(!X.is_finite()) {
+      Rcpp::stop("`X` must not have any missing values (NA).");
+    }
 
     unsigned int N = l2id.n_elem;
     unsigned int p = X.n_cols;
