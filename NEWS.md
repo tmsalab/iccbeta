@@ -1,5 +1,9 @@
 # iccbeta 1.2.0
 
+## Feature
+
+- Added automatic calculation of icc on `lmer` model objects.
+
 ## Changes
 
 - Added improved error messaging related to presence of missing values and
@@ -17,6 +21,7 @@
 ## Deployment
 
 - Enable the default TMSALab Travis-CI configuration.
+- Enable code coverage checks.
 
 # iccbeta 1.1.0
 
