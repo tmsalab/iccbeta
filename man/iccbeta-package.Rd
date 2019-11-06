@@ -82,6 +82,7 @@ Available at: \url{http://www.hermanaguinis.com/pubs.html}
 \seealso{
 Useful links:
 \itemize{
+  \item \url{https://tmsalab.github.io/iccbeta}
   \item \url{https://github.com/tmsalab/iccbeta}
   \item Report bugs at \url{https://github.com/tmsalab/iccbeta/issues}
 }
