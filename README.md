@@ -1,6 +1,10 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+# iccbeta: Intraclass Correlation
+
+<!-- badges: start -->
+
 [![Build
 Status](https://travis-ci.org/tmsalab/iccbeta.svg)](https://travis-ci.org/tmsalab/iccbeta)
 [![Package-License](http://img.shields.io/badge/license-GPL%20\(%3E=2\)-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
@@ -14,11 +18,10 @@ Downloads](http://cranlogs.r-pkg.org/badges/iccbeta?color=brightgreen)](http://w
 Downloads](http://cranlogs.r-pkg.org/badges/grand-total/iccbeta?color=brightgreen)](http://www.r-pkg.org/pkg/iccbeta)
 [![Coverage
 status](https://codecov.io/gh/tmsalab/iccbeta/branch/master/graph/badge.svg)](https://codecov.io/github/tmsalab/iccbeta?branch=master)
-
-# `iccbeta` R package
+<!-- badges: end -->
 
 A function and vignettes for computing an intraclass correlation
-described in Aguinis & Culpepper (in press). iccbeta quantifies the
+described in Aguinis & Culpepper (in press). `iccbeta` quantifies the
 share of variance in a dependent variable that is attributed to group
 heterogeneity in slopes.
 
