@@ -1,3 +1,4 @@
+^CRAN-RELEASE$
 ^codecov\.yml$
 ^.*\.Rproj$
 ^\.Rproj\.user$
@@ -6,3 +7,6 @@
 ^\.travis\.yml$
 ^cran-comments\.md$
 ^src/\.clang-format$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
