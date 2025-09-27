@@ -1,5 +1,15 @@
 # iccbeta 1.2.1
 
+## Changes
+
+- Added explicit dependencies on R (>= 4.3.0), Rcpp (>= 1.1.0), and RcppArmadillo (>= 15.0.2-2)
+- Removed CXX11 from `src/Makevars` and `src/Makevars.win` to avoid potential compilation issues
+  with newer versions of Armadillo through RcppArmadillo.
+- Switched README.Rmd to README.qmd to use Quarto for rendering.
+- Fixed CITATION file to use `c()` instead of `personList()` and `bibentry()` to
+  avoid CRAN check notes.
+- Switched from Travis-CI to GitHub Action workflows.
+
 ## Documentation
 
 - Added a `pkgdown` website that deploys to <https://tmsalab.github.io/iccbeta/>.
