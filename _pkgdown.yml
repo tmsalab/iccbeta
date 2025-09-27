@@ -1,4 +1,7 @@
+url: https://tmsalab.github.io/iccbeta/
 template:
   params:
     bootswatch: cerulean
     ganalytics: UA-151562227-1
+  bootstrap: 5
+
