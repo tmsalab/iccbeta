@@ -1,8 +1,8 @@
-# iccbeta 1.2.0.900
+# iccbeta 1.2.1
 
 ## Documentation
 
-- Added a `pkgdown` website that deploys to <http://tmsalab.github.io/iccbeta>.
+- Added a `pkgdown` website that deploys to <https://tmsalab.github.io/iccbeta/>.
 
 # iccbeta 1.2.0
 
