@@ -6,6 +6,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // icc_beta_cpp
 Rcpp::List icc_beta_cpp(const arma::mat& X, const arma::vec& l2id, const arma::mat& T, double vy);
 RcppExport SEXP _iccbeta_icc_beta_cpp(SEXP XSEXP, SEXP l2idSEXP, SEXP TSEXP, SEXP vySEXP) {
