@@ -1,23 +1,12 @@
 
+
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # iccbeta: Intraclass Correlation
 
 <!-- badges: start -->
 
-[![Build
-Status](https://travis-ci.org/tmsalab/iccbeta.svg)](https://travis-ci.org/tmsalab/iccbeta)
-[![Package-License](http://img.shields.io/badge/license-GPL%20\(%3E=2\)-brightgreen.svg?style=flat)](http://www.gnu.org/licenses/gpl-2.0.html)
-[![CRAN Version
-Badge](http://www.r-pkg.org/badges/version/iccbeta)](https://cran.r-project.org/package=iccbeta)
-[![CRAN
-Status](https://cranchecks.info/badges/worst/iccbeta)](https://cran.r-project.org/web/checks/check_results_iccbeta.html)
-[![RStudio CRAN Mirror’s Monthly
-Downloads](http://cranlogs.r-pkg.org/badges/iccbeta?color=brightgreen)](http://www.r-pkg.org/pkg/iccbeta)
-[![RStudio CRAN Mirror’s Total
-Downloads](http://cranlogs.r-pkg.org/badges/grand-total/iccbeta?color=brightgreen)](http://www.r-pkg.org/pkg/iccbeta)
-[![Coverage
-status](https://codecov.io/gh/tmsalab/iccbeta/branch/master/graph/badge.svg)](https://codecov.io/github/tmsalab/iccbeta?branch=master)
+[![R-CMD-check](https://github.com/tmsalab/iccbeta/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tmsalab/iccbeta/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 A function and vignettes for computing an intraclass correlation
@@ -36,8 +25,8 @@ install.packages("iccbeta")
 Or, you can be on the cutting-edge development version on GitHub using:
 
 ``` r
-if(!requireNamespace("devtools")) install.packages("devtools")
-devtools::install_github("tmsalab/iccbeta")
+if(!requireNamespace("remotes")) install.packages("remotes")
+remotes::install_github("tmsalab/iccbeta")
 ```
 
 ## Usage
