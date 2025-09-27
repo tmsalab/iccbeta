@@ -1,6 +1,6 @@
 citHeader("To cite the package 'iccbeta' in publications use:")
 
-citEntry(entry = "Manual",
+bibentry(bibtype = "Manual",
          title        = "{iccbeta: Multilevel Model Intraclass Correlation for Slope Heterogeneity}",
          author       = personList(as.person("Steven Andrew Culpepper"),
                                    as.person("Herman Agunis")
@@ -11,8 +11,8 @@ citEntry(entry = "Manual",
                               "URL https://cran.r-project.org/package=iccbeta.")
 )
 
-citEntry(
-    entry   = "Article",
+bibentry(
+    bibtype   = "Article",
     title   = "An expanded decision making procedure for examining cross-level interaction effects with multilevel modeling",
     author  = personList(as.person("Herman Aguinis"), 
                         as.person("Steven Andrew Culpepper")),
