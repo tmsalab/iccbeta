@@ -6,10 +6,7 @@
 \alias{iccbeta-package}
 \title{iccbeta: Multilevel Model Intraclass Correlation for Slope Heterogeneity}
 \description{
-A function and vignettes for computing an intraclass correlation
-    described in Aguinis & Culpepper (2015) <doi:10.1177/1094428114563618>.
-    This package quantifies the share of variance in a dependent variable that
-    is attributed to group heterogeneity in slopes.
+A function and vignettes for computing an intraclass correlation described in Aguinis & Culpepper (2015) \doi{10.1177/1094428114563618}. This package quantifies the share of variance in a dependent variable that is attributed to group heterogeneity in slopes.
 }
 \examples{
 \dontrun{
@@ -82,18 +79,18 @@ Available at: \url{http://www.hermanaguinis.com/pubs.html}
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://tmsalab.github.io/iccbeta}
+  \item \url{https://tmsalab.github.io/iccbeta/}
   \item \url{https://github.com/tmsalab/iccbeta}
   \item Report bugs at \url{https://github.com/tmsalab/iccbeta/issues}
 }
 
 }
 \author{
-\strong{Maintainer}: Steven Andrew Culpepper \email{sculpepp@illinois.edu} (0000-0003-4226-6176) [copyright holder]
+\strong{Maintainer}: Steven Andrew Culpepper \email{sculpepp@illinois.edu} (\href{https://orcid.org/0000-0003-4226-6176}{ORCID}) [copyright holder]
 
 Authors:
 \itemize{
-  \item Herman Aguinis \email{haguinis@gwu.edu} (0000-0002-3485-9484) [copyright holder]
+  \item Herman Aguinis \email{haguinis@gwu.edu} (\href{https://orcid.org/0000-0002-3485-9484}{ORCID}) [copyright holder]
 }
 
 }
