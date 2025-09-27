@@ -135,7 +135,7 @@ modeling. \emph{Organizational Research Methods}. Available at:
 \seealso{
 \code{\link[lme4:lmer]{lme4::lmer()}}, \code{\link[=model.matrix]{model.matrix()}},
 \code{\link[lme4:VarCorr]{lme4::VarCorr()}}, \code{\link[RLRsim:LRTSim]{RLRsim::LRTSim()}},
-\link[iccbeta:Hofmann]{iccbeta::Hofmann}, and \link[iccbeta:simICCdata]{iccbeta::simICCdata}
+\link{Hofmann}, and \link{simICCdata}
 }
 \author{
 Steven Andrew Culpepper

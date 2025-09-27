@@ -4,7 +4,8 @@
 \name{simICCdata}
 \alias{simICCdata}
 \title{Simulated data example from Aguinis and Culpepper (2015).}
-\format{A data frame with 900 observations (i.e., 30 observations nested
+\format{
+A data frame with 900 observations (i.e., 30 observations nested
 within 30 groups) on the following 6 variables.
 \describe{
 \item{\code{l1id}}{A within group ID variable.}
@@ -13,7 +14,8 @@ within 30 groups) on the following 6 variables.
 \item{\code{X1}}{A simulated level 1 predictor.}
 \item{\code{X2}}{A simulated level 1 predictor.}
 \item{\code{Y}}{A simulated outcome variable.}
-}}
+}
+}
 \source{
 Aguinis, H., & Culpepper, S.A. (2015). An expanded decision
 making procedure for examining cross-level interaction effects with

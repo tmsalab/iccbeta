@@ -4,7 +4,8 @@
 \name{Hofmann}
 \alias{Hofmann}
 \title{A multilevel dataset from Hofmann, Griffin, and Gavin (2000).}
-\format{A data frame with 1,000 observations and 7 variables.
+\format{
+A data frame with 1,000 observations and 7 variables.
 \describe{
 \item{\code{id}}{a numeric vector of group ids.}
 \item{\code{helping}}{a numeric vector of the helping outcome variable construct.}
@@ -13,7 +14,8 @@
 \item{\code{cohesion}}{a level 2 covariate measuring cohesion.}
 \item{\code{mood_grp_cent}}{group-mean centered mood predictor.}
 \item{\code{mood_grd_cent}}{grand-mean centered mood predictor.}
-}}
+}
+}
 \source{
 Hofmann, D.A., Griffin, M.A., & Gavin, M.B. (2000). The application of hierarchical linear modeling to management research. In K.J. Klein, & S.W.J. Kozlowski (Eds.), Multilevel theory, research, and methods in organizations: Foundations, extensions, and new directions (pp. 467-511).  Hoboken, NJ: Jossey-Bass.
 }
