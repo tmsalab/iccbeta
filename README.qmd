@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# iccbeta: Intraclass Correlation
+# iccbeta: Intraclass Correlation <a href="https://tmsalab.github.io/iccbeta/"><picture><source media="(prefers-color-scheme: dark)" srcset="man/figures/iccbeta-logo-animated-dark.svg"><img src="man/figures/iccbeta-logo-animated-light.svg" width="150" align="right" alt="A hexagonal logo for iccbeta: a bundle of eight group regression lines meets at one dot and fans out at different slopes into an orange distribution of slopes labelled β₁ⱼ, above a solid bar with the word iccbeta cut out of it."/></picture></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/tmsalab/iccbeta/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tmsalab/iccbeta/actions/workflows/R-CMD-check.yaml)

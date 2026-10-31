@@ -2,7 +2,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# iccbeta: Intraclass Correlation
+# iccbeta: Intraclass Correlation <a href="https://tmsalab.github.io/iccbeta/"><picture><source media="(prefers-color-scheme: dark)" srcset="man/figures/iccbeta-logo-animated-dark.svg"><img src="man/figures/iccbeta-logo-animated-light.svg" width="150" align="right" alt="A hexagonal logo for iccbeta: a bundle of eight group regression lines meets at one dot and fans out at different slopes into an orange distribution of slopes labelled β₁ⱼ, above a solid bar with the word iccbeta cut out of it."/></picture></a>
 
 <!-- badges: start -->
 
