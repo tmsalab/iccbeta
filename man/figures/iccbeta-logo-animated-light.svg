@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 600" width="520" height="600" role="img" aria-labelledby="iccbetalTitle iccbetalDesc">
+<title id="iccbetalTitle">iccbeta</title>
+<desc id="iccbetalDesc">Hexagonal logo for the R package iccbeta. A tight bundle of eight bold lines enters from the left edge and meets at a solid dot: the group regression lines, sharing their intercept at the group-centred predictor. Past the dot they fan out to the right, each with its own slope, and their ends land in an orange density lying on its side, the distribution of the group slopes, labelled beta one j, whose variance ICC beta measures. Under the fan, a solid bar runs from the dot to where the lines end, with the word iccbeta cut out of it. The plate around them is left open.</desc>
+<defs>
+<clipPath id="iccbetalClip"><path d="M260 5 L515 152.5 L515 447.5 L260 595 L5 447.5 L5 152.5 Z"/></clipPath>
+</defs>
+<style>
+@keyframes iccbetalFold0 {
+  0%, 30% { transform: skewY(0deg); animation-timing-function: cubic-bezier(.5, 0, .75, 0); }
+  44%, 56% { transform: skewY(-10.97deg); animation-timing-function: cubic-bezier(.2, .8, .3, 1.12); }
+  80%, 100% { transform: skewY(0deg); }
+}
+@keyframes iccbetalFold1 {
+  0%, 30% { transform: skewY(0deg); animation-timing-function: cubic-bezier(.5, 0, .75, 0); }
+  44%, 56% { transform: skewY(-7.82deg); animation-timing-function: cubic-bezier(.2, .8, .3, 1.12); }
+  80%, 100% { transform: skewY(0deg); }
+}
+@keyframes iccbetalFold2 {
+  0%, 30% { transform: skewY(0deg); animation-timing-function: cubic-bezier(.5, 0, .75, 0); }
+  44%, 56% { transform: skewY(-4.86deg); animation-timing-function: cubic-bezier(.2, .8, .3, 1.12); }
+  80%, 100% { transform: skewY(0deg); }
+}
+@keyframes iccbetalFold3 {
+  0%, 30% { transform: skewY(0deg); animation-timing-function: cubic-bezier(.5, 0, .75, 0); }
+  44%, 56% { transform: skewY(-2.12deg); animation-timing-function: cubic-bezier(.2, .8, .3, 1.12); }
+  80%, 100% { transform: skewY(0deg); }
+}
+@keyframes iccbetalFold4 {
+  0%, 30% { transform: skewY(0deg); animation-timing-function: cubic-bezier(.5, 0, .75, 0); }
+  44%, 56% { transform: skewY(1.32deg); animation-timing-function: cubic-bezier(.2, .8, .3, 1.12); }
+  80%, 100% { transform: skewY(0deg); }
+}
+@keyframes iccbetalFold5 {
+  0%, 30% { transform: skewY(0deg); animation-timing-function: cubic-bezier(.5, 0, .75, 0); }
+  44%, 56% { transform: skewY(4.26deg); animation-timing-function: cubic-bezier(.2, .8, .3, 1.12); }
+  80%, 100% { transform: skewY(0deg); }
+}
+@keyframes iccbetalFold6 {
+  0%, 30% { transform: skewY(0deg); animation-timing-function: cubic-bezier(.5, 0, .75, 0); }
+  44%, 56% { transform: skewY(7.65deg); animation-timing-function: cubic-bezier(.2, .8, .3, 1.12); }
+  80%, 100% { transform: skewY(0deg); }
+}
+@keyframes iccbetalFold7 {
+  0%, 30% { transform: skewY(0deg); animation-timing-function: cubic-bezier(.5, 0, .75, 0); }
+  44%, 56% { transform: skewY(10.39deg); animation-timing-function: cubic-bezier(.2, .8, .3, 1.12); }
+  80%, 100% { transform: skewY(0deg); }
+}
+@keyframes iccbetalSpread {
+  0%, 30% { transform: scaleY(1); animation-timing-function: cubic-bezier(.5, 0, .75, 0); }
+  44%, 56% { transform: scaleY(0.080); animation-timing-function: cubic-bezier(.2, .8, .3, 1.12); }
+  80%, 100% { transform: scaleY(1); }
+}
+.iccbetalL0 { transform-origin: 80px 338px; animation: iccbetalFold0 8s infinite; }
+.iccbetalL1 { transform-origin: 80px 338px; animation: iccbetalFold1 8s infinite; }
+.iccbetalL2 { transform-origin: 80px 338px; animation: iccbetalFold2 8s infinite; }
+.iccbetalL3 { transform-origin: 80px 338px; animation: iccbetalFold3 8s infinite; }
+.iccbetalL4 { transform-origin: 80px 338px; animation: iccbetalFold4 8s infinite; }
+.iccbetalL5 { transform-origin: 80px 338px; animation: iccbetalFold5 8s infinite; }
+.iccbetalL6 { transform-origin: 80px 338px; animation: iccbetalFold6 8s infinite; }
+.iccbetalL7 { transform-origin: 80px 338px; animation: iccbetalFold7 8s infinite; }
+.iccbetalSlab { transform-origin: 400px 234.5px; animation: iccbetalSpread 8s infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .iccbetalL0, .iccbetalL1, .iccbetalL2, .iccbetalL3, .iccbetalL4, .iccbetalL5, .iccbetalL6, .iccbetalL7, .iccbetalSlab { animation: none; }
+}
+</style>
+<g clip-path="url(#iccbetalClip)">
+<path d="M260 5 L515 152.5 L515 447.5 L260 595 L5 447.5 L5 152.5 Z" fill="#f7f6f2"/>
+<path class="iccbetalL0" d="M-12 348.4 L404 301.5" stroke="#13294B" stroke-width="10"/>
+<path class="iccbetalL1" d="M-12 354 L404 281.6" stroke="#13294B" stroke-width="10"/>
+<path class="iccbetalL2" d="M-12 359.3 L404 263.2" stroke="#13294B" stroke-width="10"/>
+<path class="iccbetalL3" d="M-12 364.1 L404 246.3" stroke="#13294B" stroke-width="10"/>
+<path class="iccbetalL4" d="M-12 370.1 L404 225.1" stroke="#13294B" stroke-width="10"/>
+<path class="iccbetalL5" d="M-12 375.2 L404 207" stroke="#13294B" stroke-width="10"/>
+<path class="iccbetalL6" d="M-12 381.2 L404 185.9" stroke="#13294B" stroke-width="10"/>
+<path class="iccbetalL7" d="M-12 386.1 L404 168.6" stroke="#13294B" stroke-width="10"/>
+<path class="iccbetalSlab" d="M400 114.9 L403.3 114.9 403.7 116.9 404.1 118.9 404.5 120.9 405.1 122.9 405.6 124.9 406.2 126.9 406.9 128.9 407.6 130.9 408.4 132.9 409.2 134.9 410.1 136.9 411.1 138.9 412.1 140.9 413.2 142.9 414.4 144.9 415.7 146.9 417 148.9 418.4 150.9 419.9 152.9 421.5 154.9 423.1 156.9 424.9 158.9 426.7 160.9 428.6 162.9 430.6 164.9 432.6 166.9 434.7 168.9 436.9 170.9 439.2 172.9 441.5 174.9 443.8 176.9 446.2 178.9 448.7 180.9 451.2 182.9 453.7 184.9 456.2 186.9 458.7 188.9 461.3 190.9 463.8 192.9 466.3 194.9 468.7 196.9 471.2 198.9 473.5 200.9 475.8 202.9 478 204.9 480.2 206.9 482.2 208.9 484.2 210.9 486 212.9 487.7 214.9 489.2 216.9 490.6 218.9 491.9 220.9 493 222.9 493.9 224.9 494.7 226.9 495.3 228.9 495.7 230.9 495.9 232.9 496 234.9 495.9 236.9 495.6 238.9 495.1 240.9 494.4 242.9 493.6 244.9 492.6 246.9 491.4 248.9 490.1 250.9 488.6 252.9 487 254.9 485.3 256.9 483.4 258.9 481.4 260.9 479.3 262.9 477.2 264.9 474.9 266.9 472.6 268.9 470.2 270.9 467.8 272.9 465.3 274.9 462.8 276.9 460.3 278.9 457.7 280.9 455.2 282.9 452.7 284.9 450.2 286.9 447.7 288.9 445.3 290.9 442.9 292.9 440.5 294.9 438.3 296.9 436 298.9 433.9 300.9 431.8 302.9 429.8 304.9 427.8 306.9 426 308.9 424.2 310.9 422.5 312.9 420.8 314.9 419.3 316.9 417.8 318.9 416.5 320.9 415.1 322.9 413.9 324.9 412.8 326.9 411.7 328.9 410.7 330.9 409.7 332.9 408.9 334.9 408.1 336.9 407.3 338.9 406.6 340.9 406 342.9 405.4 344.9 404.9 346.9 404.4 348.9 403.9 350.9 403.5 352.9 403.3 354.1 L400 354.1 Z" fill="#FF5F05"/>
+<circle cx="80" cy="338" r="21" fill="#13294B"/>
+<path d="M80 376 H400 V470 H80 Z" fill="#13294B"/>
+<path transform="translate(95.4 453.1)" d="M4.77 0V-42.66H17.67V0ZM11.25 -47.13Q7.8 -47.13 5.62 -49.14Q3.44 -51.15 3.44 -54.16Q3.44 -57.2 5.62 -59.22Q7.79 -61.23 11.25 -61.23Q14.75 -61.23 16.93 -59.22Q19.11 -57.2 19.11 -54.15Q19.11 -51.16 16.93 -49.14Q14.75 -47.13 11.25 -47.13ZM45.4 1.03Q38.56 1.03 33.46 -1.86Q28.36 -4.75 25.52 -9.79Q22.68 -14.83 22.68 -21.29Q22.68 -27.84 25.56 -32.85Q28.44 -37.87 33.58 -40.78Q38.71 -43.69 45.42 -43.69Q53.86 -43.69 59.66 -39.28Q65.46 -34.86 67.03 -27H53.31Q52.58 -29.76 50.44 -31.28Q48.3 -32.81 45.31 -32.81Q42.55 -32.81 40.41 -31.42Q38.27 -30.03 37.05 -27.44Q35.82 -24.85 35.82 -21.33Q35.82 -18.72 36.5 -16.65Q37.19 -14.57 38.46 -13.06Q39.73 -11.55 41.45 -10.75Q43.17 -9.95 45.33 -9.95Q47.32 -9.95 48.91 -10.62Q50.51 -11.3 51.68 -12.58Q52.85 -13.85 53.31 -15.65H67.03Q65.46 -7.99 59.65 -3.48Q53.84 1.03 45.4 1.03ZM92.08 1.03Q85.24 1.03 80.14 -1.86Q75.04 -4.75 72.2 -9.79Q69.36 -14.83 69.36 -21.29Q69.36 -27.84 72.24 -32.85Q75.12 -37.87 80.25 -40.78Q85.38 -43.69 92.1 -43.69Q100.54 -43.69 106.34 -39.28Q112.14 -34.86 113.71 -27H99.99Q99.26 -29.76 97.12 -31.28Q94.98 -32.81 91.99 -32.81Q89.23 -32.81 87.09 -31.42Q84.95 -30.03 83.72 -27.44Q82.5 -24.85 82.5 -21.33Q82.5 -18.72 83.18 -16.65Q83.86 -14.57 85.13 -13.06Q86.41 -11.55 88.13 -10.75Q89.85 -9.95 92.01 -9.95Q93.99 -9.95 95.59 -10.62Q97.19 -11.3 98.36 -12.58Q99.53 -13.85 99.99 -15.65H113.71Q112.14 -7.99 106.33 -3.48Q100.51 1.03 92.08 1.03ZM144.97 1.03Q141.4 1.03 138.49 0Q135.58 -1.03 133.36 -2.89Q131.13 -4.75 129.57 -7.32H129.22L128.6 0H117.75V-60.2H130.65V-37.56Q132.78 -40.2 136.41 -41.94Q140.05 -43.69 144.74 -43.69Q150.88 -43.69 155.41 -40.82Q159.93 -37.95 162.41 -32.92Q164.9 -27.9 164.9 -21.31Q164.9 -14.79 162.41 -9.75Q159.93 -4.71 155.45 -1.84Q150.98 1.03 144.97 1.03ZM141.1 -9.49Q144.32 -9.49 146.74 -11.03Q149.15 -12.58 150.5 -15.23Q151.85 -17.88 151.85 -21.42Q151.85 -24.9 150.5 -27.58Q149.15 -30.25 146.74 -31.77Q144.32 -33.3 141.1 -33.3Q137.93 -33.3 135.47 -31.77Q133 -30.24 131.65 -27.58Q130.3 -24.92 130.3 -21.37Q130.3 -17.88 131.65 -15.22Q133 -12.55 135.47 -11.02Q137.93 -9.49 141.1 -9.49ZM189.86 1.03Q183.17 1.03 178.05 -1.73Q172.93 -4.49 170.05 -9.43Q167.18 -14.36 167.18 -20.81Q167.18 -27.47 170.01 -32.62Q172.84 -37.77 177.94 -40.73Q183.04 -43.69 189.84 -43.69Q196.25 -43.69 201.21 -40.93Q206.17 -38.16 209 -33.35Q211.83 -28.55 211.83 -22.3Q211.83 -21.44 211.8 -20.35Q211.77 -19.27 211.62 -18.13H176.32V-25.68H198.69Q198.44 -29.17 195.99 -31.32Q193.54 -33.47 189.93 -33.47Q187.14 -33.47 184.84 -32.22Q182.54 -30.98 181.23 -28.43Q179.91 -25.88 179.91 -21.94V-19.4Q179.91 -16.48 181.11 -14.23Q182.3 -11.97 184.55 -10.7Q186.79 -9.42 189.73 -9.42Q192.51 -9.42 194.41 -10.64Q196.31 -11.86 197.36 -13.77H210.56Q209.32 -9.62 206.38 -6.26Q203.44 -2.91 199.22 -0.94Q195 1.03 189.86 1.03ZM234.77 0Q230.05 0 226.46 -1.5Q222.88 -3 220.88 -6.43Q218.89 -9.87 218.89 -15.81V-32.15H211.62V-42.66H218.89L220.27 -54.65H231.81V-42.66H242.78V-32.15H231.79V-15.68Q231.79 -12.97 232.96 -11.89Q234.14 -10.81 236.97 -10.81H242.68V0ZM258.44 1.03Q253.37 1.03 250.12 -0.68Q246.88 -2.38 245.36 -5.3Q243.85 -8.21 243.85 -11.73Q243.85 -15.53 245.8 -18.51Q247.76 -21.49 251.86 -23.21Q255.97 -24.93 262.43 -24.93H272.91Q272.91 -27.84 272.14 -29.71Q271.37 -31.58 269.68 -32.49Q267.99 -33.4 265.29 -33.4Q262.25 -33.4 260.07 -32.1Q257.88 -30.8 257.39 -28.02H244.97Q245.42 -32.73 248.06 -36.24Q250.69 -39.75 255.15 -41.72Q259.6 -43.69 265.35 -43.69Q271.52 -43.69 276.14 -41.69Q280.76 -39.69 283.28 -35.81Q285.81 -31.93 285.81 -26.23V0H275.15L273.75 -6.46H273.4Q272.07 -4.53 270.45 -3.11Q268.82 -1.69 266.96 -0.79Q265.1 0.11 262.94 0.57Q260.78 1.03 258.44 1.03ZM263.06 -8.79Q265.15 -8.79 266.73 -9.45Q268.31 -10.11 269.45 -11.28Q270.58 -12.46 271.29 -14.02Q271.99 -15.59 272.32 -17.38H263.94Q261.75 -17.38 260.31 -16.82Q258.87 -16.25 258.18 -15.25Q257.49 -14.25 257.49 -12.93Q257.49 -11.54 258.2 -10.61Q258.92 -9.69 260.19 -9.24Q261.46 -8.79 263.06 -8.79Z" fill="#f7f6f2"/>
+<path transform="translate(436.3 346)" d="M10.55 -16.09 13.11 -16.07Q15.33 -16 17.01 -15.06Q18.69 -14.12 19.56 -12.43Q20.43 -10.74 20.25 -8.46Q20.04 -5.82 18.73 -3.8Q17.42 -1.78 15.29 -0.65Q13.16 0.47 10.51 0.41Q8.87 0.37 7.5 -0.16Q6.13 -0.68 5.15 -1.65Q4.16 -2.62 3.65 -3.96Q3.14 -5.31 3.26 -6.97L4.79 -7.79Q4.65 -6.15 5.39 -4.99Q6.13 -3.83 7.43 -3.2Q8.73 -2.58 10.27 -2.54Q12.03 -2.5 13.42 -3.26Q14.8 -4.02 15.67 -5.35Q16.54 -6.68 16.74 -8.38Q16.89 -9.67 16.56 -10.87Q16.23 -12.07 15.37 -12.88Q14.51 -13.69 13.09 -13.77L10.14 -13.79ZM14.12 -28.83Q16.31 -28.79 17.97 -27.84Q19.63 -26.89 20.52 -25.21Q21.41 -23.54 21.23 -21.33Q21.07 -19 19.69 -17.47Q18.3 -15.94 16.29 -15.17Q14.28 -14.39 12.19 -14.39H10.25L10.66 -16.74H12.09Q13.57 -16.74 14.78 -17.28Q15.98 -17.81 16.74 -18.85Q17.5 -19.88 17.68 -21.43Q17.81 -22.66 17.39 -23.66Q16.97 -24.67 16.08 -25.26Q15.2 -25.86 13.93 -25.9Q12.48 -25.94 11.25 -25.28Q10.02 -24.63 9.19 -23.5Q8.36 -22.36 8.12 -20.98L3.24 7.5H-0.29L4.57 -20.96Q4.9 -23.26 6.3 -25.06Q7.7 -26.86 9.76 -27.87Q11.82 -28.89 14.12 -28.83ZM31.57 1.89Q31.57 2.41 32.27 2.59Q32.97 2.77 34.09 2.77H34.85V4H25.25V2.77H26.29Q27.33 2.77 27.99 2.59Q28.65 2.41 28.65 1.89V-7.93L29.05 -8.17Q28.81 -7.47 28.19 -7.02Q27.58 -6.57 26.72 -6.37Q25.87 -6.16 24.85 -6.16V-7.92Q26.01 -7.96 26.85 -8.14Q27.69 -8.32 28.31 -8.7Q28.93 -9.08 29.33 -9.64H31.57Z" fill="#13294B"/>
+<path transform="translate(473.5 350)" d="M4.85 -14.05Q4.27 -14.05 3.87 -14.42Q3.48 -14.79 3.48 -15.42Q3.48 -16.04 3.87 -16.4Q4.27 -16.76 4.85 -16.76Q5.43 -16.76 5.82 -16.4Q6.21 -16.04 6.21 -15.42Q6.21 -14.79 5.82 -14.42Q5.43 -14.05 4.85 -14.05ZM-3.38 4.86 -3.13 3.56Q-2.8 3.66 -2.29 3.82Q-1.79 3.98 -1.18 3.98Q-0.49 3.98 0.04 3.7Q0.57 3.41 0.93 2.73Q1.28 2.05 1.48 0.94L3.28 -9.37Q3.35 -9.71 3.18 -9.9Q3.02 -10.09 2.64 -10.2Q2.27 -10.31 1.67 -10.38L1.33 -10.42L1.5 -11.41H5.57L3.38 1.07Q3.09 2.68 2.46 3.61Q1.83 4.53 0.9 4.91Q-0.02 5.29 -1.15 5.29Q-1.86 5.29 -2.43 5.15Q-3.01 5.02 -3.38 4.86Z" fill="#13294B"/>
+</g>
+<path d="M260 5 L515 152.5 L515 447.5 L260 595 L5 447.5 L5 152.5 Z" fill="none" stroke="#13294B" stroke-width="9" stroke-linejoin="round"/>
+</svg>

@@ -4,4 +4,8 @@ template:
     bootswatch: cerulean
     ganalytics: UA-151562227-1
   bootstrap: 5
+  opengraph:
+    image:
+      src: man/figures/iccbeta-logo-static-light.svg
+      alt: The iccbeta hex logo, a fan of group regression lines whose slopes spread into an orange distribution.
 
